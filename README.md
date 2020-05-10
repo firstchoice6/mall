@@ -1,4 +1,4 @@
-# mallnew
+# mall项目
 
 ## Project setup
 ```
