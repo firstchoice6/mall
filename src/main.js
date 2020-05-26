@@ -7,6 +7,9 @@ import toast from 'components/common/toast'
 
 import FastClick from 'fastclick'
 import LazyLoad from 'vue-lazyload'
+import preview from 'vue-photo-preview'
+
+import 'vue-photo-preview/dist/skin.css'
 
 Vue.config.productionTip = false
 
@@ -26,3 +29,6 @@ FastClick.attach(document.body)
 Vue.use(LazyLoad,{
 	loading: require('./assets/img/common/placeholder.jpg')
 })
+
+// 点击图片看大图
+Vue.use(preview)
