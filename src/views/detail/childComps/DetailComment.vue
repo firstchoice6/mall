@@ -15,7 +15,7 @@
 				</div>
 			</div>
 			<div class="comment-pic"  v-for="(pic, index) in goodsComment.images" :key="index">
-				<img :src="pic">
+				<img :src="pic" preview="0" :preview-text="goodsComment.content">
 			</div>
 		</div>
 	</div>
