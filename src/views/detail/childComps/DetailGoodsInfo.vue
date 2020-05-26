@@ -6,7 +6,9 @@
 			:src="item" 
 			:key="index" 
 			class="goods-detail-img" 
-			@load="imgLoad" />
+			@load="imgLoad"
+            preview="1"
+			preview-text="商品展示"/>
 	</div>
 	
 	
