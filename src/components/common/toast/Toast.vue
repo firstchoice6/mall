@@ -1,5 +1,6 @@
 <template>
 	<div class="toast"  v-show='isShow'>
+        <img :src="path">
 		<div>{{message}}</div>
 	</div>
 </template>
@@ -10,13 +11,15 @@
 		data() {
 			return {
 				message: '',
-				isShow: false
+				isShow: false。
+                path: ''
 			}
 		},
 		methods: {
-			showToast(message,duration) {
+			showToast(message,duration，path) {
 				this.isShow = true
 				this.message = message
+                this.path = path
 				setTimeout(() => {
 					this.isShow = false
 					this.message = ''
@@ -39,4 +42,7 @@
 		text-align: center;
 		color: #ddd;
 	}
+    .toast img {
+        width: 40px
+    }
 </style>
