@@ -57,7 +57,7 @@ export default {
     	},
         calcClick() {
             if(!this.isEmpty) {
-                this.$toast.showToast('请选择要结算的商品',1000)
+                this.$toast.showToast('请选择要结算的商品',1000,require('assets/img/cart/error.svg'))
             }
         }
     }
