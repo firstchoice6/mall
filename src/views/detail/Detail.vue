@@ -169,7 +169,7 @@
 				// 		this.toastMsg = ''
 				// 	},800
 				// 	)
-					this.$toast.showToast(res,1000)
+					this.$toast.showToast(res,1000,require('assets/img/cart/sucess.svg'))
 				}
 
 				)
