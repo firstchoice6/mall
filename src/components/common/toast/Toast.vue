@@ -11,12 +11,12 @@
 		data() {
 			return {
 				message: '',
-				isShow: false。
+				isShow: false,
                 path: ''
 			}
 		},
 		methods: {
-			showToast(message,duration，path) {
+			showToast(message,duration,path) {
 				this.isShow = true
 				this.message = message
                 this.path = path
